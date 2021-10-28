@@ -1,17 +1,19 @@
 <template>
-  <base-container class="page-title">
-    <h1 class="page-title__title">Todos os exemplos</h1>
+  <base-container class="page-header">
+    <h1 class="page-header__title">
+      <slot>Todos os exemplos</slot>
+    </h1>
   </base-container>
 </template>
 
 <script>
 export default {
-  name: 'ThePageTitle',
+  name: 'PageHeader',
 };
 </script>
 
 <style lang="scss" scoped>
-.page-title {
+.page-header {
   margin-bottom: 24px;
   &__title {
     font-size: 24px;

@@ -1,11 +1,12 @@
 <template>
+<page-header />
 <div class="home">
   <base-container class="home__content">
     <section class="home__list">
-      <router-link v-for="n in 10" :key="n"
-        :to="{ name: 'home' }"
-      >
-        <div class="home__list__item">Botões</div>
+      <router-link
+        v-for="component in displayableComponents" :key="component.id"
+        :to="{ name: 'components', params: { id: component.id } }">
+        <div class="home__list__item">{{ component.name }}</div>
       </router-link>
     </section>
   </base-container>
@@ -13,8 +14,19 @@
 </template>
 
 <script>
+import displayableComponents from '@/data/displayableComponents.js';
+import PageHeader from '@/components/PageHeader.vue';
+
 export default {
   name: 'Home',
+  components: {
+    PageHeader,
+  },
+  data() {
+    return {
+      displayableComponents,
+    };
+  },
 };
 </script>
 
