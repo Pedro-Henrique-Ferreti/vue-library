@@ -1,12 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-
-  <!-- https://coolors.co/3d5a80-98c1d9-e0fbfc-ee6c4d-293241 -->
-  <!-- https://laravelexamples.com/ -->
+  <the-header />
+  <the-page-title />
+  <router-view />
 </template>
 
 <script>
+import TheHeader from '@/components/TheHeader.vue';
+import ThePageTitle from '@/components/ThePageTitle.vue';
+
 export default {
   name: 'App',
+  components: {
+    TheHeader,
+    ThePageTitle,
+  },
 };
 </script>
+
+<style lang="scss">
+@import '@/assets/scss/main.scss';
+</style>

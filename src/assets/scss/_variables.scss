@@ -3,10 +3,11 @@ $black: #000;
 $orange-1: #ee6c4d;
 $gray-1: #293241;
 $gray-2: #f3f4f6;
+$gray-3: #e5e7eb;
+$light-cyan: #e0fbfc;
 
-
-
-$primary: $gray-1;
+$primary: $orange-1;
+$secondary: $gray-1;
 $text: $gray-1;
 $text-lighter: $white;
 $background-light: $gray-2;
@@ -14,3 +15,4 @@ $background-light: $gray-2;
 $font-light: 300;
 $font-regular: 400;
 $font-semibold: 500;
+$font-bold: 600;

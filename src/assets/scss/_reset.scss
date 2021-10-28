@@ -11,8 +11,6 @@
   line-height: 1.4;
 }
 
-
-// Define display: flex para todas essas tags
 body, div, form, header, section, footer, ul, ol, li, 
 main, hr, figure, picture, nav, article, aside, p, label, button,
 h1, h2, h3, h4, h5, h6 {
@@ -25,3 +23,21 @@ body, #app, .app-layout {
   flex-direction: column;
   overflow-x: hidden;
 }
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+small {
+  font-size: 13px;
+}
+
