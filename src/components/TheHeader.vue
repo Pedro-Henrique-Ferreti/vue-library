@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <base-container class="header__content">
-      Vue Library
+      <router-link class="header__logo" :to="{ name: 'home' }">Vue Library</router-link>
     </base-container>
   </header>
 </template>
@@ -19,10 +19,12 @@ export default {
   background-color: $secondary;
   margin-bottom: 24px;
   &__content {
-    color: $text-lighter;
+    justify-content: center;
+  }
+  &__logo {
     font-size: 24px;
     font-weight: $font-semibold;
-    justify-content: center;
+    color: $text-lighter;    
   }
 }
 </style>
