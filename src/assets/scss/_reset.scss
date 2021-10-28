@@ -1,0 +1,27 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-weight: $font-regular;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: $text;
+  line-height: 1.4;
+}
+
+
+// Define display: flex para todas essas tags
+body, div, form, header, section, footer, ul, ol, li, 
+main, hr, figure, picture, nav, article, aside, p, label, button,
+h1, h2, h3, h4, h5, h6 {
+  display: flex;
+}
+
+body, #app, .app-layout {
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+}
