@@ -41,3 +41,8 @@ small {
   font-size: 13px;
 }
 
+// Changes selection color
+*::selection {
+  background-color: $primary;
+  color: $white;
+}
