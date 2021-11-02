@@ -9,3 +9,11 @@ export default {
     app.component('base-item-wrapper', BaseItemWrapper);
   }
 };
+
+/*
+  --- You can also export a function --- 
+
+  export default function(app) {
+    app.component('base-container', BaseContainer);
+  }
+*/
