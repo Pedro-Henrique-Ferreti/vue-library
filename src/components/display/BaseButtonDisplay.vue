@@ -1,9 +1,11 @@
 <template>
+<base-container>
   <div class="button-display">
     <base-item-wrapper v-for="n in 25" :key="n" description="Basic/Default">
       <base-button></base-button>
     </base-item-wrapper>
   </div>
+</base-container>
 </template>
 
 <script>

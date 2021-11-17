@@ -1,8 +1,6 @@
 <template>
   <page-header>{{ displayedComponent.name }}</page-header>
-  <base-container>
-    <component :is="displayedComponent.component" />
-  </base-container>
+  <component :is="displayedComponent.component" />
 </template>
 
 <script>
