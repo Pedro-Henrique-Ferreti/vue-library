@@ -9,4 +9,9 @@ export default [
     name: 'Before and After',
     component: 'BeforeAfterDisplay',
   },
+  {
+    id: 'key-code-modifiers',
+    name: 'KeyCode Modifiers',
+    component: 'KeyCodeModifiersDisplay',
+  },
 ];
