@@ -1,7 +1,7 @@
 <template>
   <base-container class="page-header">
     <h1 class="page-header__title">
-      <slot>Todos os exemplos</slot>
+      <slot>All examples</slot>
     </h1>
   </base-container>
 </template>
