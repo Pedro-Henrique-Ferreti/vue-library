@@ -24,6 +24,10 @@ body, #app, .app-layout {
   overflow-x: hidden;
 }
 
+#app {
+  padding-bottom: 56px;
+}
+
 a {
   text-decoration: none;
 }
